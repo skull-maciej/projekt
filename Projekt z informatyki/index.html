@@ -1,0 +1,337 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>
+			Projekt z informatyki
+		</title>
+		<style type="text/css">
+			body {
+				color: black;
+				font-size:14px;
+				background-color: light-gray;
+				font-family: arial, sans-serif;
+				margin: 40px 70px 40px 70px;
+			}
+			h1{
+				color: maroon;				
+			}
+			p{
+				font-weight: normal;
+				
+			}
+			ul{
+				list-style-type: none;
+				font-size: 18px;
+				color: green;
+			}
+			
+			span{
+				font-size: 14px;
+			}
+			
+			table{
+				border-collapse:collapse;
+				border: 1px solid black;
+			}
+			
+			th, td{
+				border: 1px solid black;
+			}
+			.black{
+				color: black;
+			}
+			.green{
+				color: green;
+			}
+			.blue{
+				color: blue;
+			}
+			.red{
+				color: red;
+			}
+			.pink{
+				color: pink;
+			}
+			.brown{
+				color: brown;
+			}
+			.orange{
+				color: orange;
+			}
+			.gold{
+				color:gold
+			}
+			.valign_middle{
+				
+				 vertical-align:middle;
+			}				
+		</style>
+		
+		<script language="javascript">
+				function resize(w,h){
+					var e = document.getElementById('horse');
+					e.style.width = w+'px';
+					e.style.height = h+'px';					
+				}
+		</script>
+	</head>
+	<body>		
+			<h1> <strong>HTML</strong> - historia powstania i standaryzacja <img src="images/html.jpg" class="valign_middle"></h1>
+			<p>
+				HTML - hyper text meta language, stworzony około roku 1989 obecnie standaryzowany przez konsorcjum W3C (<a href="http://www.w3c.org">http://www.w3c.org</a>)
+				Wykorzystywane standardy HTML:
+				<ul class="blue">
+					<li>HTML 3.x</li>
+					<li>HTML 4.x</li>
+					<li>HTML 5 - 
+						<span class=black>najnowoczesniejszy standard HTML, pozwalajacy na pisanie interaktywnych gier i aplikacji jedynie z wykorzystaniem kodu HTML i Javascipt.</span></li>
+				</ul>
+			</p>
+			
+			
+			
+			<h1>Schemat budowy strony internetowej</h1>
+				<p>Opis całej strony zawarty jest między znacznikami &lthtml&gt,a &lt;/html&gt;. Nagłówek strony wpisuje się pomiędzy &lthead&gt, a &lt;/head&gt;,
+					a w nim umieszcza się tytuł strony pośrodku &lttitle&gt, a &lt;/title&gt;. Tytuł pojawia się na pasku tytułowym okna przeglądarki. Zawartość strony
+					umieszczamy wśród &lt;body&gt;, a &lt;/body&gt;.</p>
+				<p>Podstawowa struktura strony:</p>
+					
+				<ul>
+					<li>&lt;html&gt;</li>
+						<ul>
+							<li>&lt;head&gt;</li>
+							<ul>
+								<li>&lt;title&gt;</li>
+								<ul>
+									<li>tytuł strony</li>
+								</ul>
+								<li>&lt;/title&gt;</ol></li>
+							</ul>
+							<li>&lt;/head&gt;</li>
+							<li>&lt;body&gt;</li>
+							<ul>
+								<li>treść strony</li>
+							</ul>
+							<li>&lt;/body&gt;</li>
+						</ul>
+					<li>&lt;/html&gt;<li>
+				</ul>
+
+		
+		<h1>Opis wybranych znaczników html</h1>
+		<p>
+			Strony WWW opisane za pomocą HTML, składają się z serii zagnieżdżonych znaczników. Ważne jest jednak, aby zamykając znaczik, 
+			zamknąć wszystkie znacziki otwarte wewnątrz niego, np.:
+			<ul>
+				<li class="orange">
+					<span class="brown">&lt;p&gt;</span>
+					<span class="blue">&lt;b&gt;</span>
+						tworzenie strony internetowej jest fajne 
+					<span class="brown">&lt;/p&gt;</span>
+					<span class="blue">&lt;/b&gt;</span> <span class="red">- źle</span>
+				</li>
+				<li class="orange">
+					<span class="brown">&lt;p&gt;</span>
+					<span class="blue">&lt;b&gt;</span>
+						tworzenie strony internetowej jest fajne 
+					<span class="blue">&lt;/b&gt;</span>
+					<span class="brown">&lt;/p&gt;</span> <span class="green">- dobrze</span>
+				</li>
+			</ul>
+		</p>
+		
+		<h2>Znaczniki strukturalne</h2>
+		<table border="3">
+			<thead>
+				<tr>
+					<th><span class=blue>znacznik otwierajacy</span></th>
+					<th><span class=blue>znacznik zamykajacy</span></th>
+					<th><span class=blue>co oznaczaja</span></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>&lt;h1&gt;</td><td>&lt;/h1&gt;</td><td>nagłówek pierwszego poziomu (ang. headline 1)</td></tr>
+				<tr><td>&lt;h2&gt;</td><td>&lt;/h2&gt;</td><td>nagłówek drugiego poziomu</td></tr>
+				<tr><td>&lt;h3&gt;</td><td>&lt;/h3&gt;</td><td>nagłówek trzeciego poziomu</td></tr>
+				<tr><td>&lt;h4&gt;</td><td>&lt;/h4&gt;</td><td>nagłówek czwartego poziomu</td></tr>
+				<tr><td>&lt;p&gt;</td><td>&lt;/p&gt;</td><td>akapit</td></tr>
+				<tr><td>&lt;span&gt;</td><td>&lt;/span&gt;</td><td>fragment linijki tekstu, służący do lokalnej zmiany wyglądu</td></tr>
+				<tr><td>&lt;br&gt;</td><td>-</td><td>nowy wiersz</td></tr>				
+				<tr><td>&lt;ol&gt;</td><td>&lt;/ol&gt;</td><td>lista numerowana (ang. ordered list)</td></tr>
+				<tr><td>&lt;ul&gt;</td><td>&lt;/ul&gt;</td><td>lista wyliczeniowa (ang. unordered list)</td></tr>
+				<tr><td>&lt;li&gt;</td><td>&lt;/li&gt;</td><td>element listy numerowaniej lub wyliczeniowej</td></tr>
+				<tr><td>&lt;div&gt;</td><td>&lt;/div&gt;</td><td>warstwa (prostokątny fragment), którą można dowolnie umieszczać wewnątrz strony HTML</td></tr>
+			</tbody>
+		</table>
+		
+		<h2>Znacznilki wygladu (prezentacyjne)</h2>
+		<table border="3">
+			<thead>
+				<tr>
+					<th><span class=blue>znacznik otwierajacy</span></th>
+					<th><span class=blue>znacznik zamykajacy</span></th>
+					<th><span class=blue>co oznaczaja</span></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>&lt;i&gt;</td>
+					<td>&lt;/i&gt;</td>
+					<td>czcionka pochylona</td>
+				</tr>
+				<tr>
+					<td>&lt;b&gt;</td>
+					<td>&lt;/b&gt;</td>
+					<td>czcionka pogrubiona</td>
+				</tr>
+				<tr><td>&lt;u&gt;</td><td>&lt;/u&gt;</td><td>czcionka podkreslona</td></tr>				
+				<tr><td>&lt;font size="+1"&gt;</td><td>&lt;/font&gt</td><td>rozmiar czcionki większy o 1</td></tr>
+				<tr><td>&lt;font size="-1"&gt;</td><td>&lt;/font&gt</td><td>rozmiar czcionki mniejszy o 1</td></tr>				
+			</tbody>
+		</table>
+		<p class="red">
+			<strong>Uwaga:</strong> Większość znaczników prezentacyjnych w specyfikacji HTML 4.0 oznaczono jako przestarzałe na rzecz kaskadowych arkuszy stylów CSS.	
+		</p>
+		
+		<h2>Znaczniki hipertekstowe</h2>
+		<table border="3">
+			<thead>
+				<tr>
+					<th><span class=blue>znacznik otwierajacy</span></th>
+					<th><span class=blue>znacznik zamykajacy</span></th>
+					<th><span class=blue>co oznaczaja</span></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>&lt;a&gt;</td><td>&lt;/a&gt;</td><td>Łącze hipertekstowe</td></tr>
+			</tbody>
+		</table>
+			
+		<h2> Tabele </h2>
+		<p>
+			Tabele tworzymy za pomocą znaczika &lt;tabel&gt;. Poszczególne wiersze tabeli porzedza się znacznikiem &lt;tr&gt;, a komórki znaczikiem &lt;td&gt;.
+			Znaczniki te występują w parze ze znaczikiem zamykającymi
+		</p>
+		<h2> Obrazki </h2>
+		<p>
+			Aby wstawić obraz na stronę, należy zastosować znaczik &lt;img&gt;, zwykle z atrybutem src. Ogólna postać znacznika jest następująca:
+			&lt;img src="nazwa.gif"&gt;,
+			nazwa.gif określa nazwę pliku z grafiką
+			Strony HTML obsluguja nastepujace formaty graficzne: gif, jpg, png.
+		</p>
+		<h2>Align</h2>
+		<p>
+		Atrybut definiuje wyrównanie względem innych elementów w poziomie lub w pionie. Różne elementy HTML
+		korzystają z różnych wartości atrybutu, więc warto zwracać uwagę na miejsce jego użycia.
+		<br>
+		Przykłady zastoswania align:
+		<p align="right">&lt;p align=right&gt;<span class=brown>tekst</span>&lt;/p&gt;</p>
+		<p align="center">&lt;p align=center&gt;<span class=brown>tekst</span>&lt;/p&gt;</p>
+		<p align="left">&lt;p align=left&gt;<span class=brown>tekst</span>&lt;/p&gt;</p>
+		</p>
+		<h2>Kolor czcionki oraz tła</h2>
+		<p>
+			Można zmieniać kolor czcionki oraz kolor tła.
+			<p><strong>Zmienianie koloru czcionki:</strong></p>
+		</p>		
+		<ul>
+			<li>
+				&lt;font color=kolor&gt; tekst &lt;/font&gt;
+			</li>
+		</ul>	
+		<p>
+		<strong>Zmienianie koloru tła:</strong>
+		</p>
+		<ul>	
+			<li>
+				&lt;body bgcolor=kolor&gt;
+			</li>
+		</ul>
+				
+		<p>
+			<span class="red"><strong>Uwaga</strong>: W najnowszym standarcie opisu języka HTML, tzw. HTML5, znacznik font jest nie zalecany, dlatego obecnie bardziej 
+			prawidlowym podejsciem jest korzystanie z tzw. formularzy stylów CSS.</span>
+		</p>
+		<p>
+			W miejscu "tekst" wpisujesz tekst, który chcesz zmienić kolor, a w "kolor", wybrany kolor przez ciebie, lecz pamiętaj,
+			<br>że nazwy kolorów muszą być wpisane w języku angielskim i nie wszystkie kolory da się wyświetlić.
+		</p>
+		
+		<h1>Hyperłącza</h1>
+		<p>
+			Ważne też są linki, dzięki którym możesz np. nawigować stronę. Możesz je wstawiać za pomocą tego tagu:
+		</p>
+		<ul>
+			<li>&lt;a href=link&gt;Kliknij tutaj&lt;/a&gt;</li>
+			<li><a href=http://www.youtube.com/>Kliknij tutaj</a></li>
+		</ul>
+		
+		<p>
+			W miejscu ''link'' po prostu wklejasz adres strony, na którą ma po kliknięciu przenosić.
+			Zamiast ''kliknij tutaj'' możesz wstawić dowolny tekst. Wstawiając zamiast tego tekstu 
+			kod obrazka, będziemy mogli przejść na inną stronę klikając na obrazek.
+		</p>
+		
+		<ul>
+			<li>&lt;a href=link&gt;&lt;img src=rysunek.gif&gt;&lt;/a&gt;</li>
+			<li><a href=http://www.youtube.com/><img src=images/youtube.jpg></a></li>
+		</ul>
+		<p>
+			W miejscu "rysunek.gif" wklejasz nazwę pliku, a w "link" adres strony. 
+		</p>
+	
+		<h1> Arkusze stylu - CSS </h1>
+		 To język służący do opisu formy prezentacji (wyświetlania) stron WWW. Arkusz stylów składa się z reguł określających styl dla wybranych elementów dokumentu.
+		 Reguła składa się z selektora oraz deklaracji.
+		 Selektor określa grupę elementów, którego ma dotyczyć deklaracja.
+		 Deklaracja określa formatowanie i składa się z nazwy jednej z właściwości i jej wartości napisanej po dwukropku. Deklaracja musi być otoczona nawiasami klamrowymi.
+		 <p>
+		 <strong>Wzór css:</strong>
+		 </p>
+		<span class="blue">selektor { właściwość: wartość }</span> np.
+		<p>h1 {color:red} - to oznacza, że wszyskie nagłówki pierwszego poziomu będą koloru czerwonego.</p>
+		<p>
+		Dane do arkuszy stylu muszą się znaleść pomiędzy odpowiednimi znaczikami:&lt;style type="text/css"&gt;, a &lt;/style&gt;.
+		</p>
+		
+		
+		<h1> Javascipt - dodanie życia do strony HTML</h1>
+		Aby dodac troche dynamiki do strony HTML, mozna wykorzystac jezyk programowania Javascipt, ktory jest interpretowany przez wszystkie główne przegladarki HTML (WWW).
+		Kod programu (funkcji) Javascipt musi znajdować sie pomiędzy specjalnymi tagami &lt;script&gt; i &lt;/script&gt;.
+		
+		<p> Kod funkcji do pomniejszania/powiekszania obrazka:</p>
+		<p>
+			<code>
+				<pre>
+				&lt;script language="javascript"&gt;
+				function resize(w,h){
+					// wyszukaj z dokumentu HTML element o identyfikatorze 
+					// rownym 'horse' (atrybut id='horse)
+					var e = document.getElementById('horse');
+					//zmien styl tego elementu, ustaw zadana szerokosc
+					e.style.width = w+'px';
+					//zmien styl tego elementu, ustaw zadaną wysokość
+					e.style.height = h+'px';
+				}
+				&lt;/script&gt;
+				</pre>
+			</code>
+		</p>
+		
+		<p>
+			Miłego programowania :).		
+		</p>
+		<p>
+			<img id="horse" src="images/welcome.jpg">
+			<ul>			
+				<li><a href="#horse" onclick="javascript:resize(300,300)">powiększ obrazek</a></li>
+				<li><a href="#horse" onclick="javascript:resize(100,100)">pomniejsz obrazek</a></li>
+			</ul>
+		</p>
+		<audio autoplay loop>
+			 <source src="audio/beautiful lies.mp3"/> 
+		</audio>
+				
+		
+	</body>
+</html>
